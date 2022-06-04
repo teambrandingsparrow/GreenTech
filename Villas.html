@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +16,14 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/codemirror/codemirror.css" rel="stylesheet">
+  
 
 </head>
 
@@ -125,7 +131,6 @@
 
             </div>
         </nav>
-
         <div id="page-wrapper" class="gray-bg dashbard-1">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -170,6 +175,122 @@
         </div>
 
 
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#tab-1">Add Villas</a></li>
+                <li class=""><a data-toggle="tab" href="#tab-2">View Villas</a></li>
+               
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active">
+                    <div class="panel-body">
+                       
+                        <div class="row wrapper border-bottom white-bg page-heading">
+                            <div class="col-lg-10">
+                                <h2>Add Villa</h2>
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a>Operations</a>
+                                    </li>
+                                    <li>
+                                        <a>Construction</a>
+                                    </li>
+                                    <li>
+                                        <a>Villas</a>
+                                    </li>
+                                    <li class="active">
+                                        <strong>Add</strong>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-2">
+                
+                            </div>
+                        </div>
+                        <div class="row form-flex">
+                                <div class="col-lg-12">
+                                    <div class="ibox float-e-margins" >
+                                        <div class="ibox-content">
+                                            <form method="get" class="form-horizontal">
+                                                <div class="form-group"><label class="col-sm-2 control-label">Choose Project</label>
+                
+                                                    <div class="col-sm-5"><select class="form-control m-b" name="account">
+                                                        <option>Select Project</option>
+                                                        <option>Rainwoods Villa</option>
+                                                        <option>Green Casa Villa</option>
+                                                        <option>Scotland Yard Villa</option>
+                                                        <option>Spanish Villa</option>
+                                                        <option>Signature Villa</option>
+                                                        <option>Mexican Bungalows</option>
+                
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-sm-2 col-sm-offset-2">
+                                                        <a data-toggle="modal" href="#modal-form1" class="btn btn-primary" type="submit">Add</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group"><label class="col-sm-2 control-label">Villa No</label>
+                
+                                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Villa No"></div>
+                                                </div>
+                                                <div class="form-group"><label class="col-sm-2 control-label">Client Name</label>
+                
+                                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Client Name"></div>
+                                                </div>
+                                                <div class="form-group"><label class="col-sm-2 control-label">Client Contact</label>
+                
+                                                    <div class="col-sm-10"><textarea class="form-control" placeholder="Client Contact" style="resize: none; height:10rem;"></textarea></div>
+                                                </div>
+                                                <div class="form-group"><label class="col-sm-2 control-label">Client Mail</label>
+                
+                                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Client Mail"></div>
+                                                </div>
+                                                <div class="hr-line-dashed"></div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <button class="btn btn-white" type="submit">Cancel</button>
+                                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="modal-form1" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 b-r"><h3 class="m-t-none m-b"></h3>
+                        
+                                                    <p>Add To Delivery List</p>
+                        
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Hallo</label> <input type="date" placeholder="Enter email" class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Add</strong></button>
+                                                            
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div id="tab-2" class="tab-pane">
+                    <div class="panel-body">
+                        
+              
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
                 <h2>Villas List</h2>
@@ -182,9 +303,6 @@
                     </li>
                     <li>
                         <a>Construction</a>
-                    </li>
-                    <li>
-                        <a>Projects</a>
                     </li>
                     <li>
                         <a>Villas</a>
@@ -417,66 +535,135 @@
             </div>
         </div>
 </div>
-    <div class="footer">
-        <div class="pull-right">
-            Desighned by  <strong><a href="">Brandingsparrow.com</a></strong>
+
+
+        <div class="footer">
+            <div class="pull-right">
+                Desighned by  <strong><a href="">Brandingsparrow.com</a></strong>
+            </div>
+            <div>
+                <strong>Copyright</strong> Greentech Builders &copy; 2022
+            </div>
         </div>
-        <div>
-            <strong>Copyright</strong> Greentech Builders &copy; 2022
+    
         </div>
-    </div>
-
-    </div>
-    </div>
-
+        </div>
+    
+    
 
 
-<!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 
-<script src="js/plugins/dataTables/datatables.min.js"></script>
+  <!-- Mainly scripts -->
+
+  <!-- Custom and plugin javascript -->
+  <!-- iCheck -->
+  <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+
+
+
+
+
+
+
 
 <!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
 
-<!-- Page-Level Scripts -->
-<script>
-    function myFunction() {
-        confirm("Are You Suver");
-}
-    $(document).ready(function(){
-        $('.dataTables-example').DataTable({
-            pageLength: 25,
-            responsive: true,
-            dom: '<"html5buttons"B>lTfgitp',
-            buttons: [
-                { extend: 'copy'},
-                {extend: 'csv'},
-                {extend: 'excel', title: 'ExampleFile'},
-                {extend: 'pdf', title: 'ExampleFile'},
 
-                {extend: 'print',
-                 customize: function (win){
-                        $(win.document.body).addClass('white-bg');
-                        $(win.document.body).css('font-size', '10px');
 
-                        $(win.document.body).find('table')
-                                .addClass('compact')
-                                .css('font-size', 'inherit');
-                }
-                }
-            ]
+<!-- Jasny -->
+<script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
 
+<!-- DROPZONE -->
+<script src="js/plugins/dropzone/dropzone.js"></script>
+
+<!-- CodeMirror -->
+<script src="js/plugins/codemirror/codemirror.js"></script>
+<script src="js/plugins/codemirror/mode/xml/xml.js"></script>
+
+
+
+    
+    <!-- Page-Level Scripts -->
+    <script>
+        function myFunction() {
+            confirm("Are You Suver");
+    }
+        $(document).ready(function(){
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy'},
+                    {extend: 'csv'},
+                    {extend: 'excel', title: 'ExampleFile'},
+                    {extend: 'pdf', title: 'ExampleFile'},
+    
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+    
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]
+    
+            });
+    
         });
 
-    });
 
-</script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    
 
-</body>
 
-</html>
+        Dropzone.options.dropzoneForm = {
+            paramName: "file", // The name that will be used to transfer the file
+            maxFilesize: 2, // MB
+            dictDefaultMessage: "<strong>Drop files here or click to upload. </strong></br> (This is just a demo dropzone. Selected files are not actually uploaded.)"
+        };
+
+        $(document).ready(function(){
+
+            var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_two = CodeMirror.fromTextArea(document.getElementById("code3"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+       });
+    </script>
+    
+    </body>
+    
+    </html>

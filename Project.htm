@@ -25,10 +25,6 @@
     <link href="css/plugins/codemirror/codemirror.css" rel="stylesheet">
   
 
-
-
-    <!-- calender plugins -->
-
 </head>
 
 <body>
@@ -181,12 +177,104 @@
 
         <div class="tabs-container">
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#tab-1">Leave Request</a></li>
-                <li class=""><a data-toggle="tab" href="#tab-2">Holiday/Vacation</a></li>
+                <li class="active"><a data-toggle="tab" href="#tab-1">Add Projects</a></li>
+                <li class=""><a data-toggle="tab" href="#tab-2">View Projects</a></li>
                
             </ul>
             <div class="tab-content">
                 <div id="tab-1" class="tab-pane active">
+                    <div class="panel-body">
+                       
+                        <div class="row wrapper border-bottom white-bg page-heading">
+                            <div class="col-lg-10">
+                                <h2>Add Projects</h2>
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a>Operations</a>
+                                    </li>
+                                    <li>
+                                        <a>Construction</a>
+                                    </li>
+                                    <li>
+                                        <a>Projects</a>
+                                    </li>
+                                    <li class="active">
+                                        <strong>Add</strong>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-2">
+            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-content" >
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group"><label class="col-sm-2 control-label">Project Name</label>
+            
+                                                <div class="col-sm-10"><input type="text" class="form-control"
+                                                        placeholder="Project Name"></div>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Project Location</label>
+            
+                                                <div class="col-sm-10"><input type="text" class="form-control"
+                                                        placeholder="Project Location"></div>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Project Address</label>
+            
+                                                <div class="col-sm-10"><textarea class="form-control" placeholder="Project Name"
+                                                        style="resize: none; height:10rem;"></textarea></div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <div class="col-sm-4 col-sm-offset-2">
+                                                    <button class="btn btn-white" type="submit">Cancel</button>
+                                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+                <div id="tab-2" class="tab-pane">
+                    <div class="panel-body">
+                        
+                        <div class="row wrapper border-bottom white-bg page-heading">
+                            <div class="col-lg-10">
+                                <h2> View Projects</h2>
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a>Operations</a>
+                                    </li>
+                                    <li>
+                                        <a>Construction</a>
+                                    </li>
+                                    <li>
+                                        <a>Projects</a>
+                                    </li>
+                                    <li class="active">
+                                        <strong>View Projects</strong>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-2">
+                
+                            </div>
+                        </div>
                     <div class="wrapper wrapper-content animated fadeInRight">
                         <div class="row">
                             <div class="col-lg-12">
@@ -199,218 +287,123 @@
                                 <thead>
                                 <tr>
                                     <th>Serial Number </th>
-                                    <th>Leave From-to</th>
-                                    <th>Name</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
-                                    <th>Purpose</th>
-                                    <th>Approved/Disapproved</th>
+                                    <th>Project Name</th>
+                                    <th>Project Location </th>
+                                    <th>Project Address</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr class="gradeX">
-                                    
                                     <td>1</td>
-
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
-
-
-
+                                
                                 </tr>
                                 <tr class="gradeC">
                                     <td>2</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Signature Villa</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                               
                                 </tr>
                                 <tr class="gradeA">
-                                    <td>3</td>
-                                     <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>2</td>
+                                    <td>Spanish Villa</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                 
                                 </tr>
                                 <tr class="gradeA">
                                     <td>4</td>
-                                     <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Scotland Yard Villa</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                   
                                 </tr>
                                 <tr class="gradeA">
                                     <td>5</td>
-                                     <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Green Casa Villa</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                  
                                 </tr>
                                 <tr class="gradeA">
                                     <td>6</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Rainwoods Villa</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                               
                                 </tr>
                                 <tr class="gradeA">
                                     <td>7</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                    
                                 </tr>
                                 <tr class="gradeA">
-
                                     <td>8</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                           
                                 </tr>
                                 <tr class="gradeA">
                                     <td>9</td>
-                                   <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                   
                                 </tr>
                                 <tr class="gradeA">
                                     <td>10</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                 
                                 </tr>
                                 <tr class="gradeA">
                                     <td>11</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                  
                                 </tr>
                                 <tr class="gradeA">
                                     <td>12</td>
-                                     <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                 
                                 </tr>
                                 <tr class="gradeA">
                                     <td>13</td>
-                                     <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                 
                                 </tr>
                                 <tr class="gradeA">
                                     <td>14</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                 
                                 </tr>
                                 <tr class="gradeA">
                                     <td>15</td>
-                                    <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
                                  
                                 </tr>
                                 <tr class="gradeA">
                                     <td>16</td>
-                                   <td>10/6/2022-11/6/2022</td>
-                                    <td>jhone</td>
-                                    <td>6863367386</td>
-                                    <td>absa@gmail.com</td>
+                                    <td>Mexican Bungalows</td>
+                                    <td>Kakanad</td>
                                     <td>Lorem ipsum dolor sit.</td>
-                                    <td><button data-toggle="modal" href="#modal-form" type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </button></td>
+                                 
                                 </tr>
                                
                                 </tbody>
@@ -422,11 +415,7 @@
                         </div>
                         </div>
                     </div>
-                </div>
-                
-                <div id="tab-2" class="tab-pane">
-                    <div class="panel-body">
-                        
+
 
                     </div>
                 </div>
