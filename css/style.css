@@ -210,8 +210,14 @@ ul.nav-second-level {
   width: 200px;
   display: block;
 }
+/* .ibox-content .form-group{
+  padding: 2rem;
+} */
 .navbar-form-custom .form-group {
   margin-bottom: 0;
+}
+.p-2{
+  padding: 2rem;
 }
 .nav.navbar-top-links a {
   font-size: 14px;
