@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -177,19 +179,19 @@
 
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
-                <h2>Villas List</h2>
+                <h2>Sales Receipts </h2>
                 <ol class="breadcrumb">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a>Supports</a>
+                        <a> Supports</a>
                     </li>
                     <li>
-                        <a>Hr</a>
+                        <a> Accounts</a>
                     </li>
                     <li class="active">
-                        <strong>Payroll</strong>
+                        <strong>Sales Receipts</strong>
                     </li>
                 </ol>
             </div>
@@ -197,8 +199,67 @@
 
             </div>
         </div>
-    <div class="wrapper wrapper-content animated fadeInRight">
+
         <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content" >
+                        <form method="get" class="form-horizontal">
+                            
+                                <div class="row ">
+                                    <div class="col-md-6 mt-2">
+                                        <label for="">Receipt Number </label>
+                                        <input type="text" placeholder="Voucher Number " class="form-control">
+                                    </div>
+                                    <div class="col-md-6 mt-2">
+                                        <label for="">Date </label><input type="date" placeholder=".col-md-3" class="form-control"></div>
+                                    <div class="col-md-6 mt-2">
+                                        <label for="">Client Name</label>
+                                        <select class="form-control m-b" name="account">
+                                            <option>Client Name </option>
+                                            <option>Sanjay</option>
+                                            <option>Navas</option>
+                                            <option>Rahul</option>
+                                            <option>Ajith</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mt-2">
+                                        <label for="">Payment Type </label>
+                                        <select class="form-control m-b" name="account">
+                                            <option>Select Payment Type </option>
+                                            <option>Cash</option>
+                                            <option>Credit</option>
+                                         
+    
+                                        </select>
+                                        </div>
+                                    <div class="col-md-3 mt-2">
+                                        <label for="">Amount (₹) </label>
+                                        <input type="text" placeholder="Amount (₹) " class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mt-2">
+                                        <label for="">Balance (₹) </label>
+                                        <input type="text" placeholder="Balance (₹) " class="form-control">
+                                    </div>
+                                  
+                                        <div class="col-md-6 mt-2">
+                                            <label for="">Narration </label>
+                                            <textarea type="text" placeholder="Narration " class="form-control" ></textarea>
+                                        </div>
+                                     
+                                            <div class="col-sm-2">
+                                                <button class="btn btn-white" type="submit">Cancel</button>
+                                                <button class="btn btn-primary" type="submit">Submit</button>
+                                        </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       
+
+    <div class="">
+        <div class="">
             <div class="col-lg-12">
             <div class="ibox float-e-margins">
              
@@ -209,109 +270,149 @@
                 <thead>
                 <tr>
                     <th>Serial Number </th>
-                    <th>Name</th>
-                    <th>Attendance %</th>
-                    <th>Total Salary</th>
-                    <th>Incentive</th>
-                    <th>Total to pay</th>
+                    <th>Date</th>
+                    <th>Receipt Number</th>
+                    <th>Client Name</th>
+                    <th>Amount (₹) </th>
+                    <th>Balance (₹) </th>
+                    <th>Payment Type </th>
+                    <th>Narration </th>
+                    <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="gradeX">
                     <td>1</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
+                   
+                
                 </tr>
                 <tr class="gradeC">
                     <td>2</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                 </tr>
                 <tr class="gradeA">
                     <td>3</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                 
                 </tr>
                 <tr class="gradeA">
                     <td>4</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                   
                 </tr>
                 <tr class="gradeA">
                     <td>5</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                  
                 </tr>
                 <tr class="gradeA">
                     <td>6</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                 </tr>
                 <tr class="gradeA">
                     <td>7</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                    
                 </tr>
                 <tr class="gradeA">
                     <td>8</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                 </tr>
                 <tr class="gradeA">
                     <td>9</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
+                    <td>24/6/2022</td>
+                    <td>gt139</td>
+                    <td>Marks</td>
+                    <td>2000</td>
+                    <td>5000</td>
+                    <td>Cash</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid culpa accusamus ducimus sint nisi modi eius nulla at! Aut!</td>
+
+                     <td><button type="button" style="background:#5cb85c ; border-color: #4cae4c;" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button> <button type="button" class="btn btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button></td>
                 </tr>
-                <tr class="gradeA">
-                    <td>10</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
-                </tr>
-                <tr class="gradeA">
-                    <td>11</td>
-                    <td>jhone</td>
-                    <td>100%</td>
-                    <td>100000</td>
-                    <td>2500</td>
-                    <td>12500</td>
-                 
-                </tr>
-                
-               
                 </tbody>
                 </table>
                     </div>
@@ -321,28 +422,6 @@
         </div>
         </div>
     </div>
-    <div id="modal-form" class="modal fade" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-12 b-r"><h3 class="m-t-none m-b"></h3>
-
-                            <p>Add To Delivery List</p>
-
-                            <form role="form">
-                                <div class="form-group"><label>Delivery Date</label> <input type="date" placeholder="Enter email" class="form-control"></div>
-                                <div>
-                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Add</strong></button>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                </div>
-            </div>
-            </div>
-        </div>
-</div>
     <div class="footer">
         <div class="pull-right">
             Desighned by  <strong><a href="">Brandingsparrow.com</a></strong>
@@ -371,9 +450,6 @@
 
 <!-- Page-Level Scripts -->
 <script>
-    function myFunction() {
-        confirm("Are You Suver");
-}
     $(document).ready(function(){
         $('.dataTables-example').DataTable({
             pageLength: 25,
