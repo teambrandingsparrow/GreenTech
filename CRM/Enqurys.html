@@ -23,6 +23,7 @@
     <link href="css/plugins/dropzone/dropzone.css" rel="stylesheet">
     <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
     <link href="css/plugins/codemirror/codemirror.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugins/intlTellnput/intlTelInput.css">
 </head>
 
 <body>
@@ -52,15 +53,19 @@
                         <div class="ibox-content" >
                             <form method="get" class="form-horizontal">
                                 <div class="row ">
-                                    <div class="col-md-6 mt-2">
-                                        <label for="">Name </label>
-                                        <input type="text" placeholder="Name " class="form-control">
+                                    <div class="col-md-3 mt-2">
+                                        <label for="">First Name </label>
+                                        <input type="text" placeholder="First Name " class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mt-2">
+                                        <label for="">Last Name</label>
+                                        <input type="text" placeholder="Last Name" class="form-control">
                                     </div>
                                     <div class="col-md-6 mt-2">
                                         <label for="">Email </label><input type="text" placeholder="Email" class="form-control"></div>
                                     <div class="col-md-3 mt-2">
                                         <label for="">Phone</label>
-                                        <input type="text" placeholder="Phone" class="form-control">
+                                        <input type="text" placeholder="Phone" id="mobile_code" class="form-control">
                                     </div>
                                     <div class="col-md-3 mt-2">
                                         <label for="">Address</label>
@@ -82,6 +87,14 @@
                                             <label for="">State</label>
                                             <input type="text" placeholder="State" class="form-control">
                                         </div>
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Designation</label>
+                                            <input type="text" placeholder="Designation" class="form-control">
+                                        </div>
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Organation</label>
+                                            <input type="text" placeholder="Organation" class="form-control">
+                                        </div>
                                         <div class="col-md-6 mt-2">
                                             <label for="">Description</label>
                                             <input type="text" placeholder="State" class="form-control">
@@ -95,9 +108,35 @@
                                             <label for="">Date & Time of Call</label>
                                             <input type="datetime-local" placeholder="State" class="form-control">
                                         </div>
-                                        <div class="col-md-6 mt-2">
-                                            <label for="">Referred By</label>
-                                            <input type="text" placeholder="Referred By" class="form-control">
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Lead Source</label>
+                                            <select class="form-control m-b" name="account">
+                                                <option>Lead Source</option>
+                                                <option>Reference</option>
+                                                <option>Costmer</option>
+                                                <option>Opem</option>
+                                                <option>Digital</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Lead Size(Budget)</label>
+                                            <input type="text" placeholder="Budget" class="form-control">
+                                        </div>
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Project</label>
+                                            <select class="form-control m-b" name="account">
+                                                <option>Select Project</option>
+                                                <option>Green Casa</option>
+                                                <option>Spanish Villa</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mt-2">
+                                            <label for="">Villa</label>
+                                            <select class="form-control m-b" name="account">
+                                                <option>Select Villa</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
                                         </div>
                                             <div class="col-sm-12 mt-2">
                                                 <a data-toggle="tab" href="#!" class="btn btn-primary" type="submit">Submit</a>
@@ -283,12 +322,17 @@
 <!-- CodeMirror -->
 <script src="js/plugins/codemirror/codemirror.js"></script>
 <script src="js/plugins/codemirror/mode/xml/xml.js"></script>
-
+<script src="js/plugins/intlTellnput/intlTelInput-jquery.min.js"></script>
 
 
     
     <!-- Page-Level Scripts -->
     <script>
+        $("#mobile_code").intlTelInput({
+	initialCountry: "in",
+	separateDialCode: true,
+	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
         function myFunction() {
             confirm("Are You Suver");
     }

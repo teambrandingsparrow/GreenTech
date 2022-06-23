@@ -6,6 +6,9 @@
  *   version 2.7
  *
 */
+.iti{
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -3696,7 +3699,6 @@ ol.unstyled {
   bottom: 0;
   left: 0;
   padding: 10px 20px;
-  position: absolute;
   right: 0;
   display: flex;
   justify-content: space-around;
@@ -3713,6 +3715,7 @@ ol.unstyled {
   background: white;
   border-top: 1px solid #e7eaec;
 }
+
 .footer.fixed {
   position: fixed;
   bottom: 0;
@@ -8456,7 +8459,7 @@ body.md-skin {
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
-    margin: 0 0 0 220px;
+    margin: 0  0 220px;
     min-height: 1200px;
   }
   .navbar-static-side {
@@ -8634,3 +8637,59 @@ font-size: 40pt;
   top: 4rem;
   font-size: 2.5rem;
 }
+
+.search-box{
+  position: relative;
+  display: flex;
+}
+.search-input{
+  padding: 10px;
+  border: 1px solid #111d5e;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+  background: none;
+}
+.search-button{
+ text-align: center;
+height: 51px;
+width: 40px;
+outline: none;
+cursor: pointer;
+border: 1px solid #111d5e;
+ border-radius: 0 10px 10px 0 ;
+border-left: none;
+background: none;
+font-size: 20px;
+border-left: 1px solid #111d5e;
+
+
+}
+.container{
+  width: 35%;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50% , -50%);
+}
+.tablecontent{
+
+  margin-top: 4rem;
+}
+.tablecard{
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+}
+.mt-6{
+  margin-top: 2rem;
+}
+
+@media (max-width: 730px){
+
+}
+
