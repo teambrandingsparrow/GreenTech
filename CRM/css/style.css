@@ -3502,11 +3502,11 @@ background: #f3f3f4;
 }
 html,
 body {
-  height: 100%;
+
 }
 body.full-height-layout #wrapper,
 body.full-height-layout #page-wrapper {
-  height: 100%;
+
 }
 #page-wrapper {
   min-height: auto;
@@ -3664,7 +3664,7 @@ video {
   #page-wrapper {
     position: inherit;
     margin: 0 0 0 240px;
-    min-height: 2002px;
+ 
   }
 }
 .title-action {
@@ -4023,6 +4023,10 @@ table.table-mail tr td {
   padding: 0;
   text-overflow: ellipsis;
   float: left;
+}
+.mess{
+resize: none;
+min-height: 25rem;
 }
 .ibox-title .label {
   float: left;
@@ -7635,7 +7639,7 @@ body.rtls.top-navigation .footer.fixed {
   .body-small.rtls #page-wrapper {
     position: inherit;
     margin: 0 0 0 0;
-    min-height: 1000px;
+
   }
   .body-small.rtls .navbar-static-side {
     display: none;
@@ -8460,7 +8464,7 @@ body.md-skin {
   #page-wrapper {
     position: inherit;
     margin: 0  0 220px;
-    min-height: 1200px;
+  
   }
   .navbar-static-side {
     z-index: 2001;
@@ -8477,7 +8481,6 @@ body.md-skin {
   #page-wrapper {
     position: inherit;
     margin: 0 0 0 0;
-    min-height: 1000px;
   }
   .body-small .navbar-static-side {
     display: none;
@@ -8517,6 +8520,9 @@ body.md-skin {
     z-index: 2001;
     position: fixed;
     width: 220px;
+  }
+  .iconaroow{
+    font-size: 3rem;
   }
   .fixed-sidebar.body-small.mini-navbar .navbar-static-side {
     display: block;
@@ -8689,7 +8695,9 @@ border-left: 1px solid #111d5e;
   margin-top: 2rem;
 }
 
-@media (max-width: 730px){
-
+@media (max-width: 530px){
+  .search-input{
+    width: 100%;
+  }
 }
 
